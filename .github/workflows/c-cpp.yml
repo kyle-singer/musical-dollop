@@ -8,7 +8,7 @@ on:
       build_type:
         type: string
         default: DEBUG
-        required: true
+        required: false
 
 jobs:
   build:
