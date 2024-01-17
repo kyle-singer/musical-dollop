@@ -6,7 +6,7 @@
 #include <iostream>
 
 int main(int argc, char *argv[]) {
-    std::cout << "Hello, pushy world!\n";
+    std::cout << "Hello, pushier world!\n";
 
     return 0;
 }
