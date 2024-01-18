@@ -2,9 +2,9 @@ name: Block Workflow Pull Requests
 
 on:
   pull_request_target:
-    types: [opened, reopened]
     paths:
-      - '.github/workflows/*'
+      - '.github/workflows/**'
+      - '.github/CODEOWNERS'
 
 jobs:
   test:
