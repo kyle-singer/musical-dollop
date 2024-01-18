@@ -9,8 +9,10 @@ on:
 
 jobs:
   test:
+    permissions:
+      pull-requests: write
     runs-on: "ubuntu-latest"
     steps:
-      - uses: superbrothers/close-pull-request@v3
+      - uses: kyle-singer/superbrothers-close-pull-request@v3
         with:
           comment: "Hi! We aren't accepting updates to workflow files in pull requests, so must reject this pull request."
