@@ -1,0 +1,15 @@
+name: Block Workflow Pull Requests
+
+on:
+  pull_request_target:
+    types: [opened, reopened]
+    paths:
+      - '/.github/workflows'
+
+jobs:
+  test:
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: superbrothers/close-pull-request@v3
+        with:
+          comment: "Hi! We aren't accepting updates to workflow files in pull requests, so must reject this pull request."
